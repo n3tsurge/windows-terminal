@@ -1,0 +1,113 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+
+    "profiles":
+    [
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false,
+            "colorScheme": "Dark+",
+            "fontSize": 11,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.5,
+	        "fontFace":  "Cascadia Code PL",
+	        "fontSize": 10,
+	        "closeOnExit": true
+        },
+        {
+            // Make changes here to the cmd.exe profile
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "hidden": false,
+            "colorScheme": "Dark+",
+	        "fontFace":  "Cascadia Code PL",
+	        "fontSize": 10,
+	        "closeOnExit": true
+        },
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure",
+            "colorScheme": "Dark+",
+	        "fontFace":  "Cascadia Code PL",
+	        "fontSize": 10,
+	        "closeOnExit": true
+        },
+        {
+            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+            "hidden": false,
+            "name": "Ubuntu",
+            "source": "Windows.Terminal.Wsl",
+            "colorScheme": "Dark+",
+	        "fontFace":  "Cascadia Code PL",
+	        "fontSize": 10,
+	        "closeOnExit": true
+        },
+        {
+            "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+            "hidden": false,
+            "name": "kali-linux",
+            "source": "Windows.Terminal.Wsl",
+            "colorScheme": "Dark+",
+	        "fontFace":  "Cascadia Code PL",
+	        "fontSize": 10,
+	        "closeOnExit": true
+        },
+        {
+            "guid": "{55ca431a-3a87-5fb3-83cd-11ececc031d2}",
+            "hidden": false,
+            "icon": "file:///c:/users/brian/pictures/icons/kali-menu.png",
+            "name": "Win-KeX",
+            "commandline": "wsl -d kali-linux kex --wtstart -s",
+            "startingDirectory" : "//wsl$/kali-linux/home/netsurge",
+            "colorScheme": "Dark+",
+	        "fontFace":  "Cascadia Code PL",
+	        "fontSize": 10,
+	        "closeOnExit": true
+        },
+        {
+            "name": "Windows Terminal (elevated)",
+            "commandline": "powershell.exe -command Start-Process -Verb RunAs \"shell:appsFolder\\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App\"",
+            "hidden": false,
+            "icon": "ms-appx:///Images/Square44x44Logo.targetsize-32.png"
+        }
+    ],
+
+    // Add custom color schemes to this array
+    "schemes": [{
+  "name": "Dark+",
+  "black": "#000000",
+  "red": "#cd3131",
+  "green": "#0dbc79",
+  "yellow": "#e5e510",
+  "blue": "#2472c8",
+  "purple": "#bc3fbc",
+  "cyan": "#11a8cd",
+  "white": "#e5e5e5",
+  "brightBlack": "#666666",
+  "brightRed": "#f14c4c",
+  "brightGreen": "#23d18b",
+  "brightYellow": "#f5f543",
+  "brightBlue": "#3b8eea",
+  "brightPurple": "#d670d6",
+  "brightCyan": "#29b8db",
+  "brightWhite": "#e5e5e5",
+  "background": "#0e0e0e",
+  "foreground": "#cccccc"
+}],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
